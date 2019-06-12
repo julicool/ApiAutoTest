@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fee70c78-95c7-4d2c-b154-9602e235657f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ApiAutoTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supports/getresult.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supports/sendmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cases/TopApi.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Cases/TopApi.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Supports/getresponse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="576">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="384">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -42,10 +42,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Supports/getexcel.py">
+        <entry file="file://$PROJECT_DIR$/Supports/getresult.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="19" />
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Supports/getexcel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Supports/sendmail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,16 +107,19 @@
       <list>
         <option value="$PROJECT_DIR$/Supports/getresponse.py" />
         <option value="$PROJECT_DIR$/Supports/getexcel.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/Supports/sendemail.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/Supports/sendmail.py" />
+        <option value="$PROJECT_DIR$/Supports/getresult.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="25" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="237" />
+    <option name="y" value="186" />
+    <option name="width" value="1430" />
+    <option name="height" value="814" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -91,8 +127,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ApiAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiAutoTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiAutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiAutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiAutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Supports" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,6 +188,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="getresult" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ApiAutoTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supports" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supports/getresult.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ApiAutoTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,9 +230,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sendmail" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ApiAutoTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Supports" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Supports/sendmail.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
+        <item itemvalue="Python.sendmail" />
+        <item itemvalue="Python.getresult" />
         <item itemvalue="Python.getexcel" />
       </list>
     </recent_temporary>
@@ -175,25 +275,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894625" weight="0.3290461" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978564" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894625" weight="0.32832617" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49894625" visible="true" weight="0.32832617" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50105375" side_tool="true" visible="true" weight="0.32832617" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.618019" weight="0.32939914" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49841937" visible="true" weight="0.32832617" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.38198105" side_tool="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/xlrd/__init__.py">
@@ -214,30 +325,85 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Supports/sendemail.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/xlwt/Row.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="1754" column="12" selection-start-line="1754" selection-start-column="4" selection-end-line="1754" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/email/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Supports/getresponse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="384">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Supports/getexcel.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/smtplib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="19" />
+        <state relative-caret-position="200">
+          <caret line="323" selection-start-line="323" selection-end-line="323" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Supports/getresponse.py">
+    <entry file="file://$PROJECT_DIR$/Supports/sendmail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        <state relative-caret-position="528">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Supports/getexcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Supports/getresult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
