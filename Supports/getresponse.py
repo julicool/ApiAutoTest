@@ -28,7 +28,7 @@ def post_req(url, data) :
 
 def get_req(url, data) :
     try :
-        req = requests.get(url, headers=headers, params=data)
+        req = requests.get(url, params=data, headers=headers)
         res = req.text
         return json.loads(res)
     except Exception as e :

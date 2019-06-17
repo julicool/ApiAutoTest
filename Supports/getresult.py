@@ -1,11 +1,14 @@
 import xlwt
 import time
 
+
 def create_excel(my_data):
     title_style = set_style(18, 1)
     fail_style = set_style(2, 1)
     row_index = 1
-    my_time = time.strftime('%Y%m%d%H%M%S', time.localtime())
+    run_total = len(my_data)
+    run_failt = 0
+    run_time = time.strftime('%Y%m%d%H%M%S', time.localtime())
 
     my_excel = xlwt.Workbook()                          # 创建表格
     my_sheet = my_excel.add_sheet('test_result')        # 创建sheet页
@@ -30,16 +33,16 @@ def create_excel(my_data):
         my_sheet.write(row_index, 5, i['data'])
         if i['result'] == "Error":
             my_sheet.write(row_index, 1, i['result'], fail_style)
+            run_failt += 1
         else:
             my_sheet.write(row_index, 1, i['result'])
         row_index += 1
 
-    my_excel.save("./Results/report-" + my_time +".xls")
+    my_excel.save("./Results/report-" + run_time +".xls")
+    run_result = {"run_total": run_total, "run_failt": run_failt, "run_time": run_time}
+    return run_result
 
-    return my_time
 
-
-# 颜色说明 0 = Black, 1 = White, 2 = Red, 3 = Green, 4 = Blue, 5 = Yellow, 6 = Magenta, 7 = Cyan, 16 = Maroon, 17 = Dark Green, 18 = Dark Blue, 19 = Dark Yellow , almost brown), 20 = Dark Magenta, 21 = Teal, 22 = Light Gray, 23 = Dark Gray, the list goes on...
 def set_style(cell_color=1, font_color=0) :             # cell_color为单元格颜色，font_color为字体颜色
     my_pattern = xlwt.Pattern()                         # 初始化单元格样式
     my_pattern.pattern = xlwt.Pattern.SOLID_PATTERN
@@ -51,3 +54,12 @@ def set_style(cell_color=1, font_color=0) :             # cell_color为单元格
     my_style.font = my_font                             # 添加字体样式
 
     return my_style
+
+
+'''
+style颜色说明
+0 = Black, 1 = White, 2 = Red, 3 = Green, 4 = Blue, 5 = Yellow, 
+6 = Magenta, 7 = Cyan, 16 = Maroon, 17 = Dark Green, 18 = Dark Blue, 
+19 = Dark Yellow , almost brown), 20 = Dark Magenta, 21 = Teal, 
+22 = Light Gray, 23 = Dark Gray, the list goes on...
+'''

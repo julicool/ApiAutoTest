@@ -2,8 +2,10 @@ from Supports import getexcel
 from Supports import getresponse
 from Supports import getresult
 from Supports import sendmail
-from schema import Schema
+from schema import Schema, And
+import logging
 
+logging.basicConfig(format='%(asctime)s : %(filename)s - %(levelname)s : %(message)s', level=logging.INFO)
 
 my_data = getexcel.get_data('.\Cases\Topapi.xlsx')
 for i in range(len(my_data)) :
@@ -19,6 +21,7 @@ for i in range(len(my_data)) :
         my_data[i]['result'] = "Error"
         my_data[i]['reason'] = str(e)
 
-my_time = getresult.create_excel(my_data)
-result = sendmail.send_mail(my_time)
-print(result)
+run_result = getresult.create_excel(my_data)
+if run_result['run_failt'] > 0 :
+    result = sendmail.send_mail(run_result)
+    print(result)
